@@ -5,6 +5,9 @@ import android.content.SharedPreferences;
 
 import java.util.Set;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ */
 public class SafePrefer {
 
     public static SharedPreferences getSharedPreference(Context context, String preferName){

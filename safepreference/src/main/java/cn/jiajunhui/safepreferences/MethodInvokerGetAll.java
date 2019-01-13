@@ -8,6 +8,9 @@ import android.text.TextUtils;
 import java.io.Serializable;
 import java.util.Map;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ */
 class MethodInvokerGetAll implements MethodInvoker {
 
     @Override

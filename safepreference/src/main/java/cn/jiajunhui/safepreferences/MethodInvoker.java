@@ -3,6 +3,9 @@ package cn.jiajunhui.safepreferences;
 import android.content.Context;
 import android.os.Bundle;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ */
 public interface MethodInvoker {
 
     String METHOD_GET_VALUE = "method_get_value";

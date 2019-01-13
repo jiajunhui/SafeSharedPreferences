@@ -7,7 +7,11 @@ import android.text.TextUtils;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ */
 class MethodInvokerEditValue implements MethodInvoker {
 
     @Override
@@ -16,7 +20,7 @@ class MethodInvokerEditValue implements MethodInvoker {
             return null;
         }
         SharedPreferences preferences = context.getSharedPreferences(arg, Context.MODE_PRIVATE);
-        ArrayList<Bundle> options = extras.getParcelableArrayList(OptionParams.KEY_VALUE_GROUP);
+        List<Bundle> options = extras.getParcelableArrayList(OptionParams.KEY_VALUE_GROUP);
         if (options == null) {
             options = new ArrayList<>();
         }
@@ -70,7 +74,7 @@ class MethodInvokerEditValue implements MethodInvoker {
                 }
                 return editor.putStringSet(key, new HashSet<>(list));
             default:
-                throw new IllegalArgumentException("unknown value type:" + valueType);
+                throw new IllegalArgumentException("Illegal value type:" + valueType);
         }
     }
 

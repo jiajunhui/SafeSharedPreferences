@@ -11,6 +11,9 @@ import android.support.annotation.Nullable;
 
 import java.util.ArrayList;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ */
 public class SafeSharedPreferencesProvider extends ContentProvider {
 
     private InvokerEngine mInvokerEngine;

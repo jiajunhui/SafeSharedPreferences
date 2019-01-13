@@ -16,6 +16,14 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Created by Taurus on 2019/1/12.
+ *
+ * Safe SharedPreferences implements interface SharedPreferences{@link SharedPreferences}
+ * ,All operations are implemented through content provider{@link SafeSharedPreferencesProvider}
+ * operations.
+ *
+ */
 class SafeSharedPreferences implements SharedPreferences {
 
     private static final String AUTHORITY = "cn.jiajunhui.safepreferences";
